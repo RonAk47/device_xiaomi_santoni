@@ -1,0 +1,12 @@
+<resources> 
+
+    <!-- Xtended Rounded Corner Overlay -->
+    <dimen name="notification_shadow_radius">15.0dip</dimen>
+    <dimen name="rounded_corner_fuckedup_radius">8.0dip</dimen>
+    <dimen name="rounded_corner_radius">10.0dip</dimen>
+    <dimen name="status_bar_clock_end_padding">7.0dip</dimen>
+    <dimen name="status_bar_padding_start">15.0dip</dimen>
+
+
+
+</resources>
