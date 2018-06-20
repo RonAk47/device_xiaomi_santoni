@@ -85,7 +85,7 @@ debug.gralloc.enable_fb_ubwc=1
 ro.opengles.version=196610
 ro.qualcomm.cabl=0
 ro.qualcomm.svi=0
-ro.sf.lcd_density=320
+ro.sf.lcd_density=260
 sys.display-size=3840x2160
 
 # DRM
@@ -217,3 +217,44 @@ ro.config.zram=true
 
 # Create Swap disk, if below sys-prop enabled & also if device has lower (< 1 GB) RAM
 ro.config.swap=true
+# Hardware Info
+ro.device.chipset=Qualcomm MSM8937 Snapdragon 430
+ro.device.cpu=Octa-core 1.4 GHz Cortex-A53
+ro.device.gpu=Adreno 505
+ro.device.rear_cam=13MP
+ro.device.front_cam=5MP
+ro.device.screen_res=720 x 1280
+# Memory settings
+ro.config.low_ram=false
+ro.vendor.qti.config.zram=true
+
+# Display power reduction (FOSS)
+ro.qcom.dpps.sensortype=3
+ro.qualcomm.display.paneltype=1
+ro.qualcomm.foss=1
+config.foss.xml=1
+config.foss.path=/vendor/etc/FOSSConfig.xml
+
+# Saves some battery without reducing performances
+wifi.supplicant_scan_interval=200
+pm.sleep_mode=3
+power.saving.mode=1
+ro.ril.disable.power.collapse=0
+persist.power.useautobrightadj=true
+
+
+# Dalvik
+dalvik.vm.checkjni=false
+dalvik.vm.verify-bytecode=false
+persist.sys.purgeable_assets=1
+
+# Higher fling velocities to smooth scrolling
+# and provide better responsiveness
+ro.min.fling_velocity=140
+ro.max.fling_velocity=20000
+
+
+# Power Manager
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=1
+
